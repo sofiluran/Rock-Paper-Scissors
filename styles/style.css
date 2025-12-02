@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: bisque;
+
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: green;
+  padding: 24px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 3rem;
+}
+
+.play-game {
+  background-color: bisque;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 24px;
+  padding: 24px;
+  text-align: center;
+}
+
+.play-game:hover {
+background-color: white;
+}
+
+.hide{
+  display: none;
+}
+
+.main {
+  align-items: center;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.choices {
+  display: none;
+  gap: 10px;
+  margin: 24px;
+}
+
+.choices.show {
+  display: flex;
+  gap: 10px;
+  margin: 24px;
+}
+
+
+.choice {
+  cursor: pointer;
+  font-size: 4rem;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.wrapper {
+  display: none;
+}
+
+.playerDisplay, .computerDisplay {
+  font-size: 2rem;
+}
+
+.result {
+  font-size: 2.5rem;
+}
+
+.wrapper.show {
+  display: block;
+  text-align: center;
+}
+
+.replay {
+  display: none; 
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 24px;
+}
+
+.replay.show {
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 24px;
+}
