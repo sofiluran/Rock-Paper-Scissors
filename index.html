@@ -6,16 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissor</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/jquery-3.7.1.min.js" defer></script>
   <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
   <header class="header">
-    <h1 class="header-title">JS GAME</h1>
+    <h1 class="header-title">Rock Paper Scissors</h1>
   </header>
- 
+
   <main class="main">
- <button class="play-game">Let's Play!</button>
+    <div class="intro-trigger">How to play</div>
+    <div class="intro-content">
+      Click the “Let's Play” button. <br>
+      Choose between Rock, Paper or Scissor by clicking on the pictures.<br>
+      Your opponent, The computer, randomly selects rock, paper, or scissors.<br>
+      If both choices are the same - it's a tie.<br>
+      If the player beats the computer - player score increases.<br>
+      If the computer beats the player - computer score increases.<br>
+      The scores and result message are updated in the DOM.<br>
+      First to reach 5 points wins.<br>
+      When someone wins, the choice buttons disappear and a Replay button appears.
+    </div>
+    <button class="play-game">Let's Play!</button>
     <div class="choices">
       <div class="choice">
         <img src="./images/rock.jpg" alt="Rock" width="300px" height="auto">
@@ -29,12 +42,13 @@
     </div>
 
     <div class="wrapper">
-    <div class="playerDisplay">PLAYER:</div>
-    <div class="computerDisplay">COMPUTER:</div>
-    <div class="result">RESULT:</div>
-    <div class="score">Score: </div>
+      <div class="playerDisplay">PLAYER:</div>
+      <div class="computerDisplay">COMPUTER:</div>
+      <div class="result">RESULT:</div>
+      <div class="score">Score: </div>
     </div>
     <button class="replay">Play again</button>
+    <div class="counter"></div>
   </main>
 
 

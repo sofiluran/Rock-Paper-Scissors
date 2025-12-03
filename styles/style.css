@@ -3,16 +3,13 @@
 }
 
 body {
-
-  background-color: bisque;
-
-
+  background-color: #FAEBD7;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
 
 .header {
-  background-color: green;
+  background-color: #FFDEAD;
   padding: 24px;
   text-align: center;
 }
@@ -21,8 +18,36 @@ body {
   font-size: 3rem;
 }
 
+.intro-trigger {
+  background-color: #E8A043;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 10px;
+  padding: 16px;
+  text-align: center;
+  width: 300px;
+}
+
+.intro-trigger:hover {
+  transform: scale(1.07);
+}
+
+.intro-content {
+  background-color: #E8A043;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  margin: 10px auto;
+  padding: 24px;
+  text-align: center;
+  width: 80%;
+}
+
 .play-game {
-  background-color: bisque;
+  background-color: #FFDEAD;
+  border: solid black 1px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 2rem;
@@ -32,16 +57,17 @@ body {
 }
 
 .play-game:hover {
-background-color: white;
+  background-color: #E8A043;
+  transform: scale(1.07);
 }
 
-.hide{
+.hide {
   display: none;
 }
 
 .main {
   align-items: center;
-  background-color: bisque;
+  background-color: #FAEBD7;
   display: flex;
   flex-direction: column;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -67,19 +93,35 @@ background-color: white;
 
   img {
     border-radius: 50%;
+    max-width: 200px;
   }
+}
+
+.choice img:hover {
+  box-shadow: 20px 20px 50px 15px grey;
 }
 
 .wrapper {
   display: none;
 }
 
-.playerDisplay, .computerDisplay {
+.playerDisplay,
+.computerDisplay {
   font-size: 2rem;
+  padding: 24px;
+  text-transform: uppercase;
 }
 
 .result {
   font-size: 2.5rem;
+  font-weight: bold;
+  padding: 24px;
+}
+
+.score {
+  margin: 24px;
+  text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 .wrapper.show {
@@ -88,15 +130,49 @@ background-color: white;
 }
 
 .replay {
-  display: none; 
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 24px;
+  display: none;
 }
 
 .replay.show {
+  background-color: #D6FAD9;
   display: block;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 2rem;
+  margin: 12px;
   padding: 24px;
+}
+
+.counter {
+  padding: 24px;
+}
+
+
+
+
+@media (min-width: 340px) and (max-width: 1024px) {
+
+  .header {
+    padding: 18px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .choice {
+    img {
+      max-width: 100px;
+    }
+  }
+
+  .choice img:hover {
+    box-shadow: none;
+    transform: scale(1.07);
+  }
+
+  .playerDisplay,
+  .computerDisplay {
+    font-size: 1rem;
+  }
 }
