@@ -86,15 +86,14 @@ body {
   margin: 24px;
 }
 
-
 .choice {
   cursor: pointer;
   font-size: 4rem;
+}
 
-  img {
-    border-radius: 50%;
-    max-width: 200px;
-  }
+.choice img {
+  border-radius: 50%;
+  max-width: 200px;
 }
 
 .choice img:hover {
@@ -146,9 +145,6 @@ body {
 .counter {
   padding: 24px;
 }
-
-
-
 
 @media (min-width: 340px) and (max-width: 1024px) {
 

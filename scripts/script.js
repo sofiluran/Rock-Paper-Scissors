@@ -21,7 +21,6 @@ $(() => {
     mouseleave: () => $(".intro-trigger").removeClass("active")
   })
 
-
   playButton.addEventListener("click", () => {
     document.querySelector(".choices").classList.add("show")
     document.querySelector(".play-game").classList.add("hide")
@@ -34,7 +33,6 @@ $(() => {
       playGame(playerChoice)
     })
   })
-
 
   const playGame = (playerChoice) => {
 
@@ -64,7 +62,6 @@ $(() => {
       result.textContent = "Computer won the game!"
     }
   }
-
 
   replayButton.addEventListener("click", () => {
     counter++;
